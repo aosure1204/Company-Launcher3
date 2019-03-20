@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wd.launcher3.Workspace xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_quanju" >
+
+    <com.wd.launcher3.CellLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/app_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_system_settings_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/system_settings"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_system_settings" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/folder_online_apps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_online_apps_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/online_apps"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_online_apps" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_vdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_driving_data_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driving_data"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_driving_data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_ebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_e_book_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_book"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_e_book" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/folder_common_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_common_tool_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_tool"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_common_tool" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_drive_assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_traffic_assistance_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/traffic_assistance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_traffic_assistance" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_weather_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weather"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_weather" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_photos_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/photos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_photos" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.wd.launcher3.CellLayout>
+
+    <com.wd.launcher3.CellLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/app_car_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_vehicle_control_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicle_control"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_vehicle_control" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_btphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bluetooth_phone_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bluetooth_phone"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bluetooth_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_music_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/music"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_music" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mobile_internet_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_internet"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/app_air_conditioner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_air_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/air"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_air" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_navigation_map_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/navigation_map"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigation_map" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_radio_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_radio" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_margin_left"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:layout_marginRight="@dimen/app_margin_right"
+                android:layout_marginBottom="@dimen/app_margin_bottom"
+                android:background="@drawable/bg_app"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_car_network_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_network"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/app_title_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wd.launcher3.CellLayout>
+</com.wd.launcher3.Workspace>

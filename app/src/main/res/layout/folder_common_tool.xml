@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_tool_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_dialog_fullscreen"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_tool"
+            android:textSize="44sp"
+            android:textColor="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+            <TextView
+                android:id="@+id/app_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_calendar"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/calendar"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="150dp"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/app_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_calculator"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/calculator"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+            <TextView
+                android:id="@+id/app_system_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_system_info"
+                android:text="@string/system_info"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="150dp"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/app_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_video"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/video"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

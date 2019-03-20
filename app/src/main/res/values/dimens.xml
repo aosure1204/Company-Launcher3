@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell_layout_padding_left">28dp</dimen>
+    <dimen name="cell_layout_padding_right">28dp</dimen>
+    <dimen name="cell_layout_padding_bottom">4dp</dimen>
+
+    <dimen name="app_width">366dp</dimen>
+    <dimen name="app_height">390dp</dimen>
+    <dimen name="app_margin_left">36dp</dimen>
+    <dimen name="app_margin_right">36dp</dimen>
+    <dimen name="app_margin_top">15dp</dimen>
+    <dimen name="app_margin_bottom">6dp</dimen>
+
+    <dimen name="app_title_text_size">32sp</dimen>
+<!--    <dimen name="app_small_icon_width">58dp</dimen>
+    <dimen name="app_small_icon_height">58dp</dimen>
+    <dimen name="app_large_icon_width">310dp</dimen>
+    <dimen name="app_large_icon_height">310dp</dimen>-->
+</resources>

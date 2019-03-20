@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_apps_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_dialog_fullscreen"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_apps"
+            android:textSize="44sp"
+            android:textColor="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+            <TextView
+                android:id="@+id/app_we_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_we_chat"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/we_chat"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="150dp"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/app_himalayan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_himalayan"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/himalayan"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+            <TextView
+                android:id="@+id/app_cool_my_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_cool_my_music"
+                android:text="@string/cool_my_music"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="150dp"
+                android:clickable="true"/>
+            <TextView
+                android:id="@+id/app_qq_browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_qq_browser"
+                android:drawablePadding="24dp"
+                android:textAlignment="center"
+                android:text="@string/qq_browser"
+                android:textSize="36sp"
+                android:textColor="#FFFFFF"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
