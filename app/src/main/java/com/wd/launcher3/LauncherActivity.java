@@ -2,8 +2,11 @@ package com.wd.launcher3;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.PixelFormat;
@@ -27,10 +30,10 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
     private IBinder mWindowToken;
 
     private WindowManager mWindowManager;
-    private View mFolderOnlineAppsWindowView;
-    private View mFolderCommonToolWindowView;
 
     private List<String> mInstalledPackagesName = new ArrayList<String>();
+
+    private List<View> mWindowViewList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,15 +62,23 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
         appBTPhone.setOnClickListener(this);
         View appMusic = findViewById(R.id.app_music);
         appMusic.setOnClickListener(this);
+        View appMobileInternet = findViewById(R.id.app_mobile_internet);
+        appMobileInternet.setOnClickListener(this);
         View appAirConditioner = findViewById(R.id.app_air_conditioner);
         appAirConditioner.setOnClickListener(this);
         View appNavigation = findViewById(R.id.app_navigation);
         appNavigation.setOnClickListener(this);
         View appRadio = findViewById(R.id.app_radio);
         appRadio.setOnClickListener(this);
+        View appCarNetwork = findViewById(R.id.app_car_network);
+        appCarNetwork.setOnClickListener(this);
 
         mWindowManager = this.getSystemService(WindowManager.class);
         mWindowToken = appSettings.getWindowToken();
+
+        //home按键广播
+        IntentFilter filter = new IntentFilter(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+        registerReceiver(mCloseSystemDialogsReceiver, filter);
     }
 
     @Override
@@ -75,6 +86,13 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
         super.onResume();
 
         getInstalledPackages();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        removeFolderWindow();
     }
 
     private void getInstalledPackages() {
@@ -96,18 +114,19 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
                 startApp("com.wd.settings", "com.wd.settings.LauncherActivity");
                 break;
             case R.id.folder_online_apps:
-                mFolderOnlineAppsWindowView = addFolderWindow(R.layout.folder_online_apps);
-                if(mFolderOnlineAppsWindowView != null) {
-                    final View rootView = mFolderOnlineAppsWindowView;
-                    View onlineAppsContainer = rootView.findViewById(R.id.online_apps_container);
+                View onlineAppsRootView = addFolderWindow(R.layout.folder_online_apps);
+                if(onlineAppsRootView != null) {
+                    mWindowViewList.add(onlineAppsRootView);
+
+                    View onlineAppsContainer = onlineAppsRootView.findViewById(R.id.online_apps_container);
                     onlineAppsContainer.setOnClickListener(this);
-                    View appWeChat = rootView.findViewById(R.id.app_we_chat);
+                    View appWeChat = onlineAppsRootView.findViewById(R.id.app_we_chat);
                     appWeChat.setOnClickListener(this);
-                    View appHimalayan = rootView.findViewById(R.id.app_himalayan);
+                    View appHimalayan = onlineAppsRootView.findViewById(R.id.app_himalayan);
                     appHimalayan.setOnClickListener(this);
-                    View appCoolMyMusic = rootView.findViewById(R.id.app_cool_my_music);
+                    View appCoolMyMusic = onlineAppsRootView.findViewById(R.id.app_cool_my_music);
                     appCoolMyMusic.setOnClickListener(this);
-                    View appQQBrowser = rootView.findViewById(R.id.app_qq_browser);
+                    View appQQBrowser = onlineAppsRootView.findViewById(R.id.app_qq_browser);
                     appQQBrowser.setOnClickListener(this);
                 }
                 break;
@@ -118,18 +137,19 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
                 startApp("com.wd.ebook", "com.wd.ebook.LauncherActivity");
                 break;
             case R.id.folder_common_tool:
-                mFolderCommonToolWindowView = addFolderWindow(R.layout.folder_common_tool);
-                if(mFolderCommonToolWindowView != null) {
-                    final View rootView = mFolderCommonToolWindowView;
-                    View commonToolContainer = rootView.findViewById(R.id.common_tool_container);
+                View commonTollRootView = addFolderWindow(R.layout.folder_common_tool);
+                if(commonTollRootView != null) {
+                    mWindowViewList.add(commonTollRootView);
+
+                    View commonToolContainer = commonTollRootView.findViewById(R.id.common_tool_container);
                     commonToolContainer.setOnClickListener(this);
-                    View appCalendar = rootView.findViewById(R.id.app_calendar);
+                    View appCalendar = commonTollRootView.findViewById(R.id.app_calendar);
                     appCalendar.setOnClickListener(this);
-                    View appCalculator = rootView.findViewById(R.id.app_calculator);
+                    View appCalculator = commonTollRootView.findViewById(R.id.app_calculator);
                     appCalculator.setOnClickListener(this);
-                    View appSystemInfo = rootView.findViewById(R.id.app_system_info);
+                    View appSystemInfo = commonTollRootView.findViewById(R.id.app_system_info);
                     appSystemInfo.setOnClickListener(this);
-                    View appVideo = rootView.findViewById(R.id.app_video);
+                    View appVideo = commonTollRootView.findViewById(R.id.app_video);
                     appVideo.setOnClickListener(this);
                 }
                 break;
@@ -151,14 +171,20 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
             case R.id.app_music:
                 startApp("com.wd.music", "com.wd.music.LauncherActivity");
                 break;
+            case R.id.app_mobile_internet:
+                startApp("");   //carlife
+                break;
             case R.id.app_air_conditioner:
                 startApp("com.wd.airconditioner", "com.wd.airconditioner.LauncherActivity");
                 break;
             case R.id.app_navigation:
-                startApp("cn.jyuntech.map", "cn.jyuntech.map.ui.MainActivity");
+                startApp("cn.jyuntech.map");
                 break;
             case R.id.app_radio:
                 startApp("com.wd.radio", "com.wd.radio.LauncherActivity");
+                break;
+            case R.id.app_car_network:
+                startApp("com.wd.sms");   //短信
                 break;
             // apps in folder_online_apps
             case R.id.online_apps_container:
@@ -233,13 +259,19 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
     }
 
     private void removeFolderWindow() {
-        if(mFolderOnlineAppsWindowView != null) {
-            mWindowManager.removeView(mFolderOnlineAppsWindowView);
-            mFolderOnlineAppsWindowView = null;
+        for(View view : mWindowViewList) {
+            mWindowManager.removeView(view);
         }
-        if(mFolderCommonToolWindowView != null) {
-            mWindowManager.removeView(mFolderCommonToolWindowView);
-            mFolderCommonToolWindowView = null;
-        }
+        mWindowViewList.clear();
     }
+
+    BroadcastReceiver mCloseSystemDialogsReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.d(TAG, "onReceive: action = " + intent.getAction());
+            if (intent != null && Intent.ACTION_CLOSE_SYSTEM_DIALOGS.equals(intent.getAction())) {
+                removeFolderWindow();
+            }
+        }
+    };
 }

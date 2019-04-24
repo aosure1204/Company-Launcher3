@@ -29,27 +29,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_system_settings_title"
+                    android:text="@string/system_settings"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_system_settings_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/system_settings"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,27 +57,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_online_apps_title"
+                    android:text="@string/online_apps"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_online_apps_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/online_apps"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -107,27 +85,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_driving_data_title"
+                    android:text="@string/driving_data"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_driving_data_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/driving_data"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,27 +113,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_e_book_title"
+                    android:text="@string/e_book"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_e_book_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/e_book"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -193,27 +149,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_common_tool_title"
+                    android:text="@string/common_tool"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_common_tool_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/common_tool"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -231,27 +176,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_traffic_assistance_title"
+                    android:text="@string/traffic_assistance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_traffic_assistance_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/traffic_assistance"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -269,27 +203,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_weather_title"
+                    android:text="@string/weather"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_weather_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/weather"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -360,27 +283,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_vehicle_control_title"
+                    android:text="@string/vehicle_control"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_vehicle_control_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/vehicle_control"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -399,27 +311,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_bluetooth_phone_title"
+                    android:text="@string/bluetooth_phone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_bluetooth_phone_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/bluetooth_phone"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -438,27 +339,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_music_title"
+                    android:text="@string/music"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_music_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/music"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -466,6 +356,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/app_mobile_internet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/app_margin_left"
@@ -476,30 +367,20 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_mobile_internet_title"
+                    android:text="@string/mobile_internet"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_mobile_internet_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mobile_internet"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mobile_internet"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -522,27 +403,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_air_title"
+                    android:text="@string/air"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_air_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/air"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -560,27 +430,16 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_navigation_map_title"
+                    android:text="@string/navigation_map"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_navigation_map_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/navigation_map"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -598,33 +457,23 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_radio_title"
+                    android:text="@string/radio"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_radio_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/radio"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_radio" />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/app_car_network"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/app_margin_left"
@@ -635,31 +484,21 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:clickable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_car_network_title"
+                    android:text="@string/car_network"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/app_title_text_size"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_car_network_title" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/car_network"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/app_title_text_size" />
-                </LinearLayout>
-
+                    android:padding="5dp" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_car_network"/>
             </LinearLayout>
         </LinearLayout>
     </com.wd.launcher3.CellLayout>
