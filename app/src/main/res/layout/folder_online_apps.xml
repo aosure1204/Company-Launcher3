@@ -29,27 +29,15 @@
             android:paddingTop="50dp">
             <TextView
                 android:id="@+id/app_we_chat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_we_chat"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
                 android:text="@string/we_chat"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="150dp"
-                android:clickable="true" />
+                style="@style/folder_item_style"
+                android:layout_marginRight="150dp" />
             <TextView
                 android:id="@+id/app_himalayan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_himalayan"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
                 android:text="@string/himalayan"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:clickable="true"/>
+                style="@style/folder_item_style"/>
         </LinearLayout>
 
         <LinearLayout
@@ -59,27 +47,15 @@
             android:paddingTop="50dp">
             <TextView
                 android:id="@+id/app_cool_my_music"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_cool_my_music"
                 android:text="@string/cool_my_music"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="150dp"
-                android:clickable="true"/>
+                style="@style/folder_item_style"
+                android:layout_marginRight="150dp"/>
             <TextView
                 android:id="@+id/app_qq_browser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_qq_browser"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
                 android:text="@string/qq_browser"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:clickable="true"/>
+                style="@style/folder_item_style"/>
         </LinearLayout>
 
     </LinearLayout>

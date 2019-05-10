@@ -19,4 +19,37 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="app_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/app_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/app_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/app_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/app_margin_bottom</item>
+        <item name="android:background">@drawable/bg_app</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="app_item_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/app_title_text_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="folder_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">24dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:clickable">true</item>
+    </style>
+
 </resources>

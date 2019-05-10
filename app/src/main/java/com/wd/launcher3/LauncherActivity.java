@@ -1,7 +1,6 @@
 package com.wd.launcher3;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -10,15 +9,16 @@ import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.PixelFormat;
-import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.PopupWindow;
 import android.widget.Toast;
+
+import com.wd.airdemo.MyApp;
+import com.wd.airdemo.module.FinalMain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +26,10 @@ import java.util.List;
 public class LauncherActivity extends Activity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
+
+    private static final int THEME_FIRST = 0;
+    private static final int THEME_SECOND = 1;
+    private static final int THEME_THIRD = 2;
 
     private IBinder mWindowToken;
 
@@ -38,7 +42,15 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launcher);
+
+        int theme = MyApp.getUserTheme();
+        if(theme == THEME_THIRD) {
+            setContentView(R.layout.activity_launcher_theme_third);
+        } else if(theme == THEME_SECOND) {
+            setContentView(R.layout.activity_launcher_theme_second);
+        } else {
+            setContentView(R.layout.activity_launcher_theme_first);
+        }
 
         View appSettings = findViewById(R.id.app_settings);
         appSettings.setOnClickListener(this);
@@ -70,8 +82,8 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
         appNavigation.setOnClickListener(this);
         View appRadio = findViewById(R.id.app_radio);
         appRadio.setOnClickListener(this);
-        View appCarNetwork = findViewById(R.id.app_car_network);
-        appCarNetwork.setOnClickListener(this);
+        View appVideo = findViewById(R.id.app_video);
+        appVideo.setOnClickListener(this);
 
         mWindowManager = this.getSystemService(WindowManager.class);
         mWindowToken = appSettings.getWindowToken();
@@ -113,6 +125,9 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
             case R.id.app_settings:
                 startApp("com.wd.settings", "com.wd.settings.LauncherActivity");
                 break;
+            case R.id.app_video:
+                startApp("com.wd.video", "com.wd.video.LauncherActivity");
+                break;
             case R.id.folder_online_apps:
                 View onlineAppsRootView = addFolderWindow(R.layout.folder_online_apps);
                 if(onlineAppsRootView != null) {
@@ -149,8 +164,8 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
                     appCalculator.setOnClickListener(this);
                     View appSystemInfo = commonTollRootView.findViewById(R.id.app_system_info);
                     appSystemInfo.setOnClickListener(this);
-                    View appVideo = commonTollRootView.findViewById(R.id.app_video);
-                    appVideo.setOnClickListener(this);
+                    View appMessage = commonTollRootView.findViewById(R.id.app_message);
+                    appMessage.setOnClickListener(this);
                 }
                 break;
             case R.id.app_drive_assist:
@@ -183,9 +198,6 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
             case R.id.app_radio:
                 startApp("com.wd.radio", "com.wd.radio.LauncherActivity");
                 break;
-            case R.id.app_car_network:
-                startApp("com.wd.sms");   //短信
-                break;
             // apps in folder_online_apps
             case R.id.online_apps_container:
                 removeFolderWindow();
@@ -215,8 +227,8 @@ public class LauncherActivity extends Activity implements View.OnClickListener {
             case R.id.app_system_info:
                 startApp("com.wd.usermanual", "com.wd.usermanual.LauncherActivity");
                 break;
-            case R.id.app_video:
-                startApp("com.wd.video", "com.wd.video.LauncherActivity");
+            case R.id.app_message:
+                startApp("com.wd.sms");
                 break;
         }
     }

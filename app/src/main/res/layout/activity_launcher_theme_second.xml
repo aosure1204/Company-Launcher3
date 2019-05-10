@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wd.launcher3.Workspace xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_theme_second_quanju" >
+
+    <com.wd.launcher3.CellLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/app_car_setting"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_vehicle_control_title"
+                    android:text="@string/vehicle_control"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_vehicle_control" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_btphone"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_bluetooth_phone_title"
+                    android:text="@string/bluetooth_phone"
+                    style="@style/app_item_title_style"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_bluetooth_phone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_music"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_music_title"
+                    android:text="@string/music"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_music" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_mobile_internet"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_mobile_internet_title"
+                    android:text="@string/mobile_internet"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_mobile_internet"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/app_air_conditioner"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_air_title"
+                    android:text="@string/air"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_air" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_navigation"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_navigation_map_title"
+                    android:text="@string/navigation_map"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_navigation_map" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_radio"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_radio_title"
+                    android:text="@string/radio"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_radio" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_settings"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_system_settings_title"
+                    android:text="@string/system_settings"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_system_settings" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.wd.launcher3.CellLayout>
+
+    <com.wd.launcher3.CellLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/app_video"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_video_title"
+                    android:text="@string/video"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_video" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/folder_online_apps"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_online_apps_title"
+                    android:text="@string/online_apps"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_online_apps" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_vdr"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_driving_data_title"
+                    android:text="@string/driving_data"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_driving_data" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_ebook"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_e_book_title"
+                    android:text="@string/e_book"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_e_book" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/folder_common_tool"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_common_tool_title"
+                    android:text="@string/common_tool"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_common_tool" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_drive_assist"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_traffic_assistance_title"
+                    android:text="@string/traffic_assistance"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_traffic_assistance" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_weather"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_weather_title"
+                    android:text="@string/weather"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_weather" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/app_photo"
+                style="@style/app_item_style">
+                <TextView
+                    android:drawableLeft="@drawable/ic_photos_title"
+                    android:text="@string/photos"
+                    style="@style/app_item_title_style" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_theme_second_photos" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.wd.launcher3.CellLayout>
+
+</com.wd.launcher3.Workspace>

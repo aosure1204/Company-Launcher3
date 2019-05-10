@@ -37,7 +37,7 @@ public class Launcher extends Activity {
 
             }
         });
-        mAppShortcutParser.parseWorkspaceFromXml(R.xml.default_workspace);
+//        mAppShortcutParser.parseWorkspaceFromXml(R.xml.default_workspace);
 
         mLauncherView = getLayoutInflater().inflate(R.layout.launcher, null);
 

@@ -1,1 +1,1 @@
-include ':one_recyclerview', ':app'
+include ':one_recyclerview', ':app', ':RadioDemo'

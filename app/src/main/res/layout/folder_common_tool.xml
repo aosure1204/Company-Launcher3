@@ -29,27 +29,15 @@
             android:paddingTop="50dp">
             <TextView
                 android:id="@+id/app_calendar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_calendar"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
                 android:text="@string/calendar"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="150dp"
-                android:clickable="true" />
+                style="@style/folder_item_style"
+                android:layout_marginRight="150dp" />
             <TextView
                 android:id="@+id/app_calculator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_calculator"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
                 android:text="@string/calculator"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:clickable="true"/>
+                style="@style/folder_item_style"/>
         </LinearLayout>
 
         <LinearLayout
@@ -59,27 +47,15 @@
             android:paddingTop="50dp">
             <TextView
                 android:id="@+id/app_system_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:drawableTop="@drawable/ic_system_info"
                 android:text="@string/system_info"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="150dp"
-                android:clickable="true"/>
+                style="@style/folder_item_style"
+                android:layout_marginRight="150dp"/>
             <TextView
-                android:id="@+id/app_video"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/ic_video"
-                android:drawablePadding="24dp"
-                android:textAlignment="center"
-                android:text="@string/video"
-                android:textSize="36sp"
-                android:textColor="#FFFFFF"
-                android:clickable="true"/>
+                android:id="@+id/app_message"
+                android:drawableTop="@drawable/ic_message"
+                android:text="@string/message"
+                style="@style/folder_item_style"/>
         </LinearLayout>
 
     </LinearLayout>

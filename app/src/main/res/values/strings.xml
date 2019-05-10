@@ -26,5 +26,6 @@
     <string name="calculator">计算器</string>
     <string name="system_info">系统信息</string>
     <string name="video">视频</string>
+    <string name="message">短信</string>
     <string name="app_is_not_installed">该应用未安装</string>
 </resources>
